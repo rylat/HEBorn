@@ -21,12 +21,11 @@ view model =
         , action "javascript:void(0);"
         ]
         [ div [ landClass [ Res.Title ] ] [ text "Login" ]
-        , br [] []
         , div [ landClass [ Res.Input ] ]
-            [ label [ for "username-field" ] [ text "username: " ]
-            , input
+            [ input
                 [ id "username-field"
                 , type_ "text"
+                , placeholer "Username"
                 , value model.username
                 , onInput (\str -> SetUsername str)
                 , onBlur ValidateUsername
@@ -35,10 +34,10 @@ view model =
             ]
         , div [ class "validation-error" ] [ text (viewErrorsUsername model) ]
         , div [ landClass [ Res.Input ] ]
-            [ label [ for "password-field" ] [ text "password: " ]
-            , input
+            [ input
                 [ id "password-field"
                 , type_ "password"
+                , placeholer "Password"
                 , value model.password
                 , onInput (\str -> SetPassword str)
                 , onBlur ValidatePassword
