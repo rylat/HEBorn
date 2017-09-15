@@ -59,7 +59,7 @@ make release
 Interested in contributing? There are several ways you can help, even if you don't know a thing about computer programming. Please take a look at our [Contribution Guidelines](CONTRIBUTING.md).
 
 ## Support
-You can get development support on our [online chat](https://chatops.hackerexperience.com/).
+You can get development support on our [online chat](https://chat.hackerexperience.com/).
 
 If you have any question that could not be responded on the chat by our
 contributors, feel free to open an issue.
