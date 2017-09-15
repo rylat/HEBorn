@@ -41,12 +41,18 @@ css =
                     , padding (px 8)
                     , backgroundColor (rgba 0 0 0 0.7)
                     , color Colors.white
-                    , textAlign center
                     , display block
-                    ]
+                    ],
                 ]
             , descendants
-                [ each [ input, button ] breezeDarkInput
+                [ each [ input, button ] breezeDarkInput,
+                  class landTitle
+                    [ Css.fontWeight (int 500)
+                    , marginBottom (px 8)
+                    ],
+                  class loginError
+                    [ marginTop (px 8)
+                    ],
                 ]
             , opacity (int 0)
             , transition 0.5 "opacity" Linear
