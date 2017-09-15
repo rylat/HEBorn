@@ -25,7 +25,7 @@ view model =
             [ input
                 [ id "username-field"
                 , type_ "text"
-                , placeholer "Username"
+                , placeholder "Username"
                 , value model.username
                 , onInput (\str -> SetUsername str)
                 , onBlur ValidateUsername
@@ -37,7 +37,7 @@ view model =
             [ input
                 [ id "password-field"
                 , type_ "password"
-                , placeholer "Password"
+                , placeholder "Password"
                 , value model.password
                 , onInput (\str -> SetPassword str)
                 , onBlur ValidatePassword
