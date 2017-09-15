@@ -4,4 +4,4 @@ elm-stuff/
 npm-debug.log
 build/
 release.tar.gz
-
+.idea
